@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Like Mebel</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!--<link rel="stylesheet/less" href="style.less">-->
+  <link rel="stylesheet" type="text/css" href="style_min.css">
+  <!--<link rel="stylesheet" type="text/css" href="normalize.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="less/dist/less.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-item--catalog').click(function(){
+        $('.submenu').css('display', 'flex'); return false;
+        $('.wrapper').css('z-index', '99999');
+      });
+      $('.wrapper').click(function(){
+        $('.submenu').css('display', 'none');
+        $('.wrapper').css('z-index', '1');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="tagline">
+      <div class="tagline__inner">
+        Мебель на заказ от производителя без сумасшедших наценок и посредников!
+      </div>
+    </div>
+    <div class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="images/header-logo.png">
+        </div>
+        <div class="header__links">
+          <ul>
+            <li><a href="#">Узнать, сколько будет стоить мебель</a></li>
+            <li><a href="#">Вызвать дизайнера-замерщика</a></li>
+            <li><a href="#">Перезвонить Вам через 20 сек?</a></li>
+          </ul>          
+        </div>
+        <div class="header__phone">
+          <div class="phone__number phone__number--header">
+            <span class="phone__code">8 (4812) </span>560-820
+          </div>  
+          Время работы с 9.00 до 18.00
+        </div>
+      </div>
+    </div>
+    <div class="main-menu">
+      <div class="main-menu__inner">
+        <ul class="menu">
+          <li class="menu-item  menu-item--catalog">
+            <a href="#" class="catalog-link">Каталог</a>
+          </li>
+          <li class="menu-item  menu-item--design">
+            <a href="#" class="design-link">Дизайн интерьеров</a>
+          </li> 
+          <li class="menu-item"><a href="#" class="menu-link">Заказ и доставка</a></li> 
+          <li class="menu-item  menu-item--samodel">
+            <a href="#" class="samodel-link">Самоделкиным</a>
+          </li> 
+          <li class="menu-item">
+            <a href="#" class="menu-link">О компании</a>
+          </li> 
+          <li class="menu-item">
+            <a href="#" class="menu-link">Контакты</a>
+          </li> 
+        </ul>
+        <div class="submenu">
+          <div class="submenu__col">
+            <ul>
+              <li><a href="#">Шкафы</a></li>
+              <li><a href="#">Шкафы купе</a></li>
+              <li><a href="#">Угловые шкафы</a></li>
+              <li><a href="#">Шкафы для одежды</a></li>
+              <li><a href="#">Винные шкафы</a></li>
+            </ul>  
+            <ul>
+              <li><a href="#">Горки</a></li>
+              <li><a href="#">Стенки</a></li>
+              <li><a href="#">Серванты</a></li>
+              <li><a href="#">Стеллажи</a></li>
+              <li><a href="komody.html">Комоды</a></li>      
+              <li><a href="#">Столы</a></li>
+              <li><a href="#">Кровати</a></li>
+              <li><a href="#">Двухъярусные кровати</a></li>
+            </ul>
+          </div>
+          <div class="submenu__col">        
+            <ul>
+              <li><a href="#">Кухни</a></li>
+              <li><a href="#">Кухни угловые</a></li>
+              <li><a href="#">Кухни с барной стойкой</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Спальня</a></li>
+              <li><a href="#">Ресепшн</a></li>
+              <li><a href="#">Гардеробная</a></li>
+              <li><a href="#">Гостиная</a></li>
+              <li><a href="#">Детская</a></li>      
+              <li><a href="#">Кабинет</a></li>
+              <li><a href="#">Прихожая</a></li>
+              <li><a href="#">Офисная мебель</a></li>
+            </ul>          
+         </div>
+         <div class="submenu__col">        
+           <ul>
+             <li><a href="#">Встроенная мебель</a></li>
+             <li><a href="#">По индивидуальным размерам</a></li>
+             <li><a href="#">Фотопечать и фрески</a></li>
+           </ul>
+           <ul>
+             <li><a href="#">Для мальчиков</a></li>
+             <li><a href="#">Для девочек</a></li>
+           </ul>
+           <ul>          
+             <li><a href="#" class="text-up">Самоделкиным -30%</a></li>
+           </ul>
+           <ul>          
+             <li><a href="#" class="text-up">Распродажа</a></li>
+           </ul>          
+         </div>
+         <div class="submenu__action">
+           Узнайте, сколько будет стоить мебель по Вашим размерам!
+         </div>
+        </div>
+      </div>
+    </div> 
+    <div class="slider">
+      <div class="slider__inner">
+        <div class="slider__header">
+          <div class="slider__header-item">
+            <span class="slider__header-bg  slider__header-bg--medium">Производство</span>
+          </div>
+          <div class="slider__header-item">
+            <span class="slider__header-bg  slider__header-bg--large">современной корпусной мебели</span>
+          </div>
+          <div class="slider__header-item">
+            <span class="slider__header-bg  slider__header-bg--small">на заказ</span>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__inner">
+        <div class="catalog">
+          <div class="catalog__col">
+            <div class="catalog__item">
+              <img src="images/shkafy.jpg">
+              <ul>
+                <li><a href="#">Шкафы</a></li>
+                <li><a href="#">Шкафы купе</a></li>
+                <li><a href="#">Угловые шкафы</a></li>
+                <li><a href="#">Шкафы для одежды</a></li>
+                <li><a href="#">Винные шкафы</a></li>
+              </ul>          
+            </div>
+            <div class="catalog__item">
+              <img src="images/gorki.jpg">
+              <ul>
+                <li><a href="#">Горки</a></li>
+                <li><a href="#">Стенки</a></li>
+                <li><a href="#">Серванты</a></li>
+              </ul>          
+            </div>
+            <div class="catalog__item">
+              <img src="images/krovati.jpg">
+              <ul>
+                <li><a href="#">Кровати</a></li>
+                <li><a href="#">Двухъярусные кровати</a></li>
+              </ul>          
+            </div>
+          </div>
+          <div class="catalog__col">      
+            <div class="catalog__item">
+              <img src="images/kuhni.jpg">
+                <ul>
+                  <li><a href="#">Кухни</a></li>
+                  <li><a href="#">Кухни с барной стойкой</a></li>
+                  <li><a href="#">Угловые кухни</a><li>
+                </ul>          
+            </div>
+            <div class="catalog__item">
+              <img src="images/stellagy.jpg">
+              <ul>
+                <li><a href="#">Стеллажи</a></li>
+                <li><a href="komody.html">Комоды</a></li>
+              </ul>          
+            </div>
+            <div class="catalog__item">
+              <img src="images/gostinaya.jpg">
+              <ul>
+                <li><a href="#">Спальня</a></li>
+                <li><a href="#">Коридор</a></li>
+                <li><a href="#">Гардеробная</a></li>
+                <li><a href="#">Гостиная</a></li>
+                <li><a href="#">Детская</a></li>
+                <li><a href="#">Кабинет</a></li>
+                <li><a href="#">Прихожая</a></li>
+                <li><a href="#">Офисная</a></li>
+              </ul>          
+            </div>
+          </div>  
+        </div>  
+      </div>  
+    </div>
+    <div class="advantages  advantages--main">
+      <div class="advantages__inner">
+        <div class="advantages__item">
+          <div class="advantages__ico  advantages__ico--furniture"></div>
+            Удобная и долговечная фурнитура
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__ico  advantages__ico--time"></div>
+          Сроки изготовления от 10 дней
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__ico  advantages__ico--fotoprint"></div>
+          Фотопечать и фрески
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__ico  advantages__ico--eco"></div>
+          Высококачественные экологически чистые материалы (эко)
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__ico  advantages__ico--colours"></div>
+          Более 200 расцветок фасадов из МДФ, пластика, массива дерева
+        </div>
+      </div>  
+    </div>
+    <div class="callback">
+      <div class="callback__inner">
+        <div class="callback__item  callback__item--photo">
+          <div class="callback__designer">
+            Дина Чеснокова &bull; дизайнер-технолог
+            <br>
+            <a href="#"><span class="callback__vk">https://vk.com/di_ka</span></a>
+          </div>  
+        </div>
+        <div class="callback__item  callback__item--call">
+          <ul class="asks">
+            <li><span>Узнать стоимость?</span></li>
+            <li><span>Не знаете, с чего начать?</span></li>
+            <li><span>Какой выбрать материал?</span></li>
+          </ul>
+          <div class="callback__contacts">
+            <ul>
+              <li><span><span class="text-up">Бесплатно</span> вызвать дизайнера-замерщика</span></li>
+            </ul>  
+            <div class="callback__icon">
+              <img src="images/call.png">
+            </div>
+            <div class="callback__phone">
+              Звоните по телефону
+              <br>
+              <span class="phone__number  phone__number--content">
+                <span class="phone__code">+7 (4812)</span> 560-820</span>
+             </div>
+             <a href="#" class="callback__button">Перезвонить Вам через 20 секунд?</a>  
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__inner">
+      <div class="footer__item footer__item--logo">
+        <img src="images/footer-logo.png">
+      </div>
+      <div class="footer__item">
+        г.Смоленск, ул. Б.Советская, 12 <br>
+        8 (4812) 385702 <br>
+        Время работы с 9.00 до 18.00
+        <hr class="block-divider">
+        <ul>
+          <li><a href="#">Задать вопрос</a></li>
+          <li><a href="#">Сделать заказ</a></li>
+          <li><a href="#">Перезвонить Вам через 20 сек?</a></li>
+        </ul>          
+      </div>
+      <div class="footer__item  footer__item--bordered">
+        <ul>
+          <li><a href="#">Шкафы</a></li>
+          <li><a href="#">Шкафы купе</a></li>
+          <li><a href="#">Угловые шкафы</a></li>
+          <li><a href="#">Шкафы для одежды</a></li>
+          <li><a href="#">Винные шкафы</a></li>
+        </ul>  
+        <ul class="ul-indent">
+          <li><a href="#">Горки</a></li>
+          <li><a href="#">Стенки</a></li>
+          <li><a href="#">Серванты</a></li>
+          <li><a href="#">Стеллажи</a></li>
+          <li><a href="#">Комоды</a></li>
+          <li><a href="#">Столы</a></li>
+          <li><a href="#">Кровати</a> </li>
+          <li><a href="#">Двухъярусные кровати</a></li>
+        </ul>  
+      </div>
+      <div class="footer__item  footer__item--bordered">
+        <ul>
+          <li><a href="#">Кухни</a></li>
+          <li><a href="#">Кухни угловые</a></li>
+          <li><a href="#">Кухни с барной стойкой</a></li>
+        </ul>
+        <ul class="ul-indent">
+          <li><a href="#">Спальня</a></li>
+          <li><a href="#">Ресепшн</a></li>
+          <li><a href="#">Гардеробная</a></li>
+          <li><a href="#">Гостиная</a></li>
+          <li><a href="#">Детская</a></li>
+          <li><a href="#">Кабинет</a></li>
+          <li><a href="#">Прихожая</a></li>
+          <li><a href="#">Офисная мебель</a></li>
+        </ul>          
+      </div>
+      <div class="footer__item  footer__item--bordered">
+        <ul>
+          <li><a href="#">Встроенная мебель</a> </li>
+          <li><a href="#">По индивидуальным размерам</a></li>
+          <li><a href="#">Фотопечать и фрески</a></li>
+        </ul>
+        <ul class="ul-indent">
+          <li> <a href="#">Для мальчиков</a></li>          
+          <li><a href="#">Для девочек</a></li>
+        </ul>
+        <ul class="ul-indent">
+          <li><a href="#">Самоделкиным -30%</a></li>
+        </ul>
+        <ul class="ul-indent">
+          <li><a href="#">Распродажа</a></li>
+        </ul>          
+      </div>
+      <div class="footer__item  footer__item--bordered  footer__item--call">
+        <ul class="ul-indent">
+          <li><a href="#">Узнайте, сколько будет стоить мебель по Вашим размерам</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <a href="#">Телеком-Сервис (С) 2016</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.advantages {
+  &--main {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #fefefe 54%, #fdfdfd 57%, #fcfcfc 60%, #fbfbfb 63%, #fafafa 66%, #f9f9f9 69%, #f8f8f8 72%, #f7f7f7 75%, #f6f6f6 78%, #f5f5f5 81%, #f4f4f4 84%, #f3f3f3 87%, #f2f2f2 90%, #f1f1f1 93%, #eeeeee 97%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#fefefe 54%,#fdfdfd 57%,#fcfcfc 60%,#fbfbfb 63%,#fafafa 66%,#f9f9f9 69%,#f8f8f8 72%,#f7f7f7 75%,#f6f6f6 78%,#f5f5f5 81%,#f4f4f4 84%,#f3f3f3 87%,#f2f2f2 90%,#f1f1f1 93%,#eeeeee 97%,#ededed 100%); 
+    background: linear-gradient(to bottom, #ffffff 0%,#fefefe 54%,#fdfdfd 57%,#fcfcfc 60%,#fbfbfb 63%,#fafafa 66%,#f9f9f9 69%,#f8f8f8 72%,#f7f7f7 75%,#f6f6f6 78%,#f5f5f5 81%,#f4f4f4 84%,#f3f3f3 87%,#f2f2f2 90%,#f1f1f1 93%,#eeeeee 97%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );   
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;  
+  }
+  &--main > .advantages__inner {
+    padding: 90px 0;
+  }
+  &--pages{
+    position: relative;
+    background: url('images/advantages-bg.png') center top no-repeat #fff;
+    background-size: 100% 100%;
+    height: 616px;
+    display: flex;
+    align-items: center;
+    margin-top: -65px;
+  }
+  &__col {
+    flex-basis: 50%;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    color: @links-text;
+    font-size: 18px;
+    text-transform: uppercase;  
+    flex-basis: 50%; 
+    margin-bottom: 30px;
+    height: 70px; 
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__item--right-col {
+    margin-left: 15px;
+  }
+  &--pages .advantages__item {
+    padding-left: 55px;
+  }
+  &__ico {
+    width: 70px;
+    height: 70px;
+    background: url('images/advantages.png')left center no-repeat;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+  &__ico--furniture {
+    background-position: 0 0;
+  }
+  &__ico--time {
+    background-position: -70px 0;
+  }
+  &__ico--fotoprint {
+    background-position: -140px 0;
+  }
+  &__ico--eco {
+    background-position: -210px 0;
+  }
+  &__ico--colours {
+    background-position: -280px 0;
+  }
+}

@@ -1,0 +1,75 @@
+.callback-form {
+  padding: 115px 0;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #fefefe 54%, #fdfdfd 57%, #fcfcfc 60%, #fbfbfb 63%, #fafafa 66%, #f9f9f9 69%, #f8f8f8 72%, #f7f7f7 75%, #f6f6f6 78%, #f5f5f5 81%, #f4f4f4 84%, #f3f3f3 87%, #f2f2f2 90%, #f1f1f1 93%, #eeeeee 97%, #ededed 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%,#fefefe 54%,#fdfdfd 57%,#fcfcfc 60%,#fbfbfb 63%,#fafafa 66%,#f9f9f9 69%,#f8f8f8 72%,#f7f7f7 75%,#f6f6f6 78%,#f5f5f5 81%,#f4f4f4 84%,#f3f3f3 87%,#f2f2f2 90%,#f1f1f1 93%,#eeeeee 97%,#ededed 100%); 
+  background: linear-gradient(to bottom, #ffffff 0%,#fefefe 54%,#fdfdfd 57%,#fcfcfc 60%,#fbfbfb 63%,#fafafa 66%,#f9f9f9 69%,#f8f8f8 72%,#f7f7f7 75%,#f6f6f6 78%,#f5f5f5 81%,#f4f4f4 84%,#f3f3f3 87%,#f2f2f2 90%,#f1f1f1 93%,#eeeeee 97%,#ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); 
+  .centered-block {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 8.33%;
+  }
+}
+.send-request {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__label--contact {
+    flex-basis: 48%;
+  }
+  &__label--info {
+    flex-basis: 100%;
+  }
+  &__label > input {
+    flex-basis: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #909090;
+    height: 30px;
+  }
+  &__label > textarea {
+    flex-basis: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #909090;
+  }
+  &__upload {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  &__upload-button {
+    background-color: #d71a49;
+    width: 265px;
+    border-radius: 8px;
+    margin: 25px 0;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  &__submit-button {
+    margin: 45px auto 0 auto;
+    background-color: #ff9e21;
+    border-radius: 8px;
+    text-align: center;
+    width: 277px;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  &__submit-button:hover {
+    cursor: pointer;
+    background-color: #fe8f01;
+  }
+}

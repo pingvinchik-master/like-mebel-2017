@@ -1,0 +1,75 @@
+.callback {
+  &__inner {
+    display: flex;   
+  }
+  &__item {
+    flex-basis: 50%;
+  }
+  &__item--photo {
+    background: url('images/designer.png')center top no-repeat;
+    position: relative;
+  }
+  &__designer {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    background: url('images/designer-title.png')left center no-repeat;
+    width: 414px;
+    height: 83px;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__vk {
+    background: url('images/vk.png')left center no-repeat;
+    padding-left: 40px;
+    color: #fff;
+    font-weight: 300;
+  }
+  a {
+    color: #fff;
+  }
+  &__item--call {
+    padding: 100px 55px;
+  }
+  ul {
+    list-style-position: inside;
+    color: @pick-out-text;
+  }
+  ul.asks {
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  li > span {
+    font-size: 21px;
+	color: @links-text;
+  }
+  &__contacts {
+    width: 455px;
+  }
+  &__icon {
+    padding: 35px 140px;
+  }
+  &__phone {
+    font-size: 21px; 
+    color: @links-text; 
+    font-weight: 600; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__button {
+    background: #ff9e21;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+

@@ -1,0 +1,76 @@
+@import "blocks-styles/normalize.less";
+@import "blocks-styles/variables.less";
+/*@import "blocks-styles/mixins.less";*/
+@import "blocks-styles/tagline.less";
+@import "blocks-styles/header.less";
+@import "blocks-styles/menu.less";
+@import "blocks-styles/slider.less";
+@import "blocks-styles/content.less";
+@import "blocks-styles/catalog.less";
+@import "blocks-styles/goods-page.less";
+@import "blocks-styles/callback.less";
+@import "blocks-styles/scheme.less";
+@import "blocks-styles/advantages.less";
+@import "blocks-styles/callback-form.less";
+@import "blocks-styles/discount.less";
+@import "blocks-styles/about.less";
+@import "blocks-styles/footer.less";
+
+
+html, body {
+  height: 100%;
+}   
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+div[class$="inner"] {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.text-up {
+  text-transform: uppercase;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.goods-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 845px;  
+  margin: 50px 0;
+  img {
+    border: 1px solid #818181;
+  }
+}
+.goods-more {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #acacac;
+}
+.goods-more:hover {
+  cursor: pointer;
+}
+
+
+
+

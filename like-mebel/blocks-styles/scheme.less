@@ -1,0 +1,65 @@
+.scheme {
+  background-size: cover;
+  height: 490px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  color: @links-text;
+  text-transform: uppercase;
+  &__inner {
+    z-index: 9999;
+    background: url('images/scheme_after.png') left 123px bottom no-repeat;
+  }
+  &__col {
+    flex-basis: 50%;
+  }
+  &__last-odd {
+    flex-basis: 100%;
+  }
+  &__item {
+    display: flex;
+    height: 120px;
+    padding-left: 25px;
+    align-items: center;
+  }
+  &__item--connect-col {
+    height: 90px;
+  }
+  &__item--left-col {
+    margin-right: 15px;
+  }
+  &__item--right-col {
+    margin-left: 15px;
+  }
+  &__icon {
+     flex-basis: 22%;
+     height: 127px;
+  }
+  &__descr {
+      flex-basis: 78%;
+  }
+  &__icon--ready {
+    background: url('images/scheme-5.png') left top no-repeat;
+  }
+  &__icon--time {
+    background: url('images/scheme-4.png') left top no-repeat;
+  }
+  &__agreement{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    background: url('images/scheme-3.png') left top no-repeat;
+    padding-left: 120px;
+  }
+  &__icon--project {
+    background: url('images/scheme-2.png') left top no-repeat;
+  }
+    &__icon--discount {
+    background: url('images/scheme-1.png') left top no-repeat;
+  }
+  &__col a {
+    color: @links-text;
+  }
+}

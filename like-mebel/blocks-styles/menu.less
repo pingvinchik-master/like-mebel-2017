@@ -1,0 +1,126 @@
+.main-menu {
+  background: @colourful-stripe;
+  &__inner {
+    display: flex;
+    height: 70px;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+	margin: 0 auto;
+  }
+  .menu li {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: relative;
+  }
+  .menu a, .menu span {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+  }
+  .menu span:hover {
+    cursor: pointer;
+  }
+  .menu li:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 4px solid @menu-active;
+    transition: width .3s ease-in-out;
+  }
+  .menu li:hover:after{
+    width: 100%;
+  }
+  .menu li:active:after{
+    width: 100%;
+  }
+  .menu a:hover{
+    text-decoration: none;
+  }
+}
+.menu-item {
+  &--catalog {
+    background: url('images/catalog.png')left 25px center no-repeat;
+    z-index: 99999;
+  }
+  .catalog-link {
+    padding: 0 25px 0 51px;
+  }
+  &--design {
+    background: url('images/design.png')left 15px center no-repeat;
+  }
+  .design-link {
+    padding: 0 25px 0 58px;
+  }
+  &--samodel{
+    background: url('images/samodel.png')right 25px center no-repeat;
+  }
+  .samodel-link {
+    padding: 0 63px 0 25px;
+  }
+  .menu-link {
+    padding: 0 25px;
+  }
+}
+.submenu {
+  background: @colourful-stripe;
+  z-index: 999999;
+  display: none;
+  flex-wrap: wrap;  
+  position: relative;
+  &__col {
+    flex-basis: 33%;
+    padding: 0 15px;
+  }
+  &__action {
+    flex-basis: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 15px;
+    position: relative;
+  }
+  &__action:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px solid @submenu-divider;
+    left: 0;
+    top: -30px;
+  }
+  ul {
+    list-style: none;
+    padding: 30px 0;
+    position: relative;
+  }
+  ul:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px solid @submenu-divider;
+    left: 0;
+    bottom: 0;
+  }
+  ul:last-child:after {
+    display: none;
+  }
+  li {
+    border-left: 8px solid transparent;
+  }
+  li:hover {
+    border-left: 8px solid @menu-active;
+  }
+  a {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 15px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}

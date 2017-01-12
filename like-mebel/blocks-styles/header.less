@@ -1,0 +1,55 @@
+.header {
+  &__inner {
+    display: flex;
+    height: 170px;
+    color: @links-text;
+  }
+  &__logo {
+    flex-basis: 33.33%;
+    margin: auto;
+    padding-left: 5px;
+  }
+  &__links {
+    flex-basis: 33.33%;
+    margin: auto;
+  }
+  &__links > ul {
+    list-style: none;
+    padding: 0 25px;
+  }
+  &__links li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 10px;
+  }
+  &__links li:before {
+    content: "\00bb";
+    color: #f81349;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &__links  a {
+    color: @links-text;
+    font-size: 18px;
+  }
+  &__phone {
+    flex-basis: 33.33%;
+    margin: auto;
+    text-align: right;
+    background: url('images/phone.png') right 230px center no-repeat;
+  }
+}
+
+.phone {
+  &__number--header {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  &__number--content {
+    font-size: 36px;
+  }
+  &__code {
+    color: @pick-out-text;  
+  }
+}

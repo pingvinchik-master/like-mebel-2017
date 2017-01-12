@@ -1,0 +1,93 @@
+.goods-page {
+  padding: 60px 0;
+  &__header {
+    font-size: 24px;
+    width: 100%;
+    font-weight: 400;  
+  }
+  &__header--main {
+    color: #ff0000; 
+  }
+  &__header--catalog {
+    color: @pick-out-text;
+    margin: 50px 0;
+  }
+  &__header--about {
+    color: #d60637;
+    margin: 50px 0;
+  }
+  &__header--callback {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: @pick-out-text;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+.how-to-buy {
+  display: flex;
+  margin: 60px 0;
+  font-size: 18px;
+  line-height: 30px;
+  &__item {
+    /*flex-basis: 33.33%;*/
+    display: flex;
+    align-items: center;
+    /*padding-left: 95px;*/
+  }
+  &__icon {
+    background: url('images/how-to-buy.png')left center no-repeat;
+    width: 70px;
+    height: 70px;
+    /*flex-basis: 25%;*/
+  }
+  &__descr {
+    flex-basis: 75%; 
+    padding: 0 10px;
+  }
+  &__application {
+    background-position: 0 0;
+  }
+  &__call {
+    background-position: -70px 0;
+  }
+  &__visit {
+    background-position: -140px 0;
+  }
+}
+.colour-picker {
+  display: flex;
+  width: 330px;
+  justify-content: space-between;
+  margin-left: 30px;
+  &__item {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #818181;
+  }
+  &__item--red {
+    background-color: #ff0511;
+  }
+  &__item--dark-yellow {
+    background-color: #ffa400;
+  }
+  &__item--light-yellow {
+    background-color: #f6f300;
+  }
+  &__item--green {
+    background-color: #00c900;
+  }
+  &__item--blue {
+    background-color: #393ec6;
+  }
+  &__item--purple {
+    background-color: #a433c6;
+  }
+  &__item--light {
+    background-color: #fff;
+  }
+  &__item--dark {
+    background-color: #000;
+  }
+}
